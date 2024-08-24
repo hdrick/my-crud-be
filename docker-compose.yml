@@ -33,14 +33,14 @@ services:
       interval: 3s
       timeout: 30s
 
-  react:
-    build:
-      context: ../react
-      dockerfile: Dockerfile
-    ports:
-      - 3000:80
-    networks:
-      - springboot-mysql-network
+  # react:
+  #   build:
+  #     context: ../react
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - 3000:80
+  #   networks:
+  #     - springboot-mysql-network
 
 volumes:
   mysql-data:
